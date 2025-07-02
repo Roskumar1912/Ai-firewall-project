@@ -50,32 +50,44 @@ ai-firewall-project/
 
 
 
+
 📡 Step 2: Sniff Network Traffic       
-sudo python3 sniffer.py
+sudo python3 sniffer.py        
 Captures 50 packets and saves to traffic_dataset.csv
 
-🧠 Step 3: Train the ML Model
-python3 train_model.py
-Generates firewall_model.pkl
 
-🔥 Step 4: Start the AI Firewall
-sudo python3 firewall.py
-Blocks suspicious IPs using your ML model
 
-🌐 Step 5: Run Flask Dashboard
-python3 dashboard.py
+🧠 Step 3: Train the ML Model     
+python3 train_model.py        
+Generates firewall_model.pkl     
+
+
+
+🔥 Step 4: Start the AI Firewall     
+sudo python3 firewall.py        
+Blocks suspicious IPs using your ML model    
+
+
+
+🌐 Step 5: Run Flask Dashboard       
+python3 dashboard.py    
 Then open in browser:  http://localhost:8080
+  
 
-🔓 Step 6: Unblock an IP (optional)
-sudo iptables -D INPUT -s <blocked_ip> -j DROP
+
+🔓 Step 6: Unblock an IP (optional)             
+sudo iptables -D INPUT -s <blocked_ip> -j DROP          
+
+
 
 🙋 Author
-Roshan Kumar
-🔗 [https://www.linkedin.com/in/roshan-kumar-5306a5233/]
-📧 [roshankumarji083@gmail.com]
+Roshan Kumar   
+🔗 [https://www.linkedin.com/in/roshan-kumar-5306a5233/]   
+📧 [roshankumarji083@gmail.com]    
+
 
 
 📄 License
-This project is under the MIT License.
+This project is under the MIT License.    
 ⭐ If you like it, don’t forget to star the repo!
 
