@@ -30,20 +30,27 @@ This is a real-time **AI-powered Firewall** built using Python, Scapy, and a Mac
 
 ---
 
-## 📸 Screenshots
-
 ai-firewall-project/
+
 ├── sniffer.py # Packet capture + dataset creation
+
 ├── train_model.py # Model training with Random Forest
+
 ├── firewall_model.pkl # Saved ML model
+
 ├── firewall.py # Real-time firewall with prediction + blocking
+
 ├── blocked_ips.log # Log of blocked IPs
+
 ├── dashboard.py # Flask web dashboard
+
 ├── traffic_dataset.csv # Captured packet data
+
 ├── .gitignore
 
 
-📡 Step 2: Sniff Network Traffic
+
+📡 Step 2: Sniff Network Traffic       
 sudo python3 sniffer.py
 Captures 50 packets and saves to traffic_dataset.csv
 
